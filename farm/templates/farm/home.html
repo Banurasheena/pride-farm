@@ -1,0 +1,35 @@
+{% extends 'farm/base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% if reports %}
+        <div class="col-md-12 col-xs-12">
+            <div class="card-box">
+                <h6>Latest reports</h6><br/>
+                
+            </div>
+        </div>
+        {% endif %}
+       
+        <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="card-box">
+                <h6>Recently logged users</h6>
+                <ul class="list-unstyled">
+                    {#{% for user in users %}#}
+                    <a href="{% url 'farmer_detail'  %}"><li>{{ user.farmer.first_name }} {{ user.farmer.last_name }}</li></a>
+                    {#{% endfor %}#}
+                </ul>
+            </div>
+        </div> -->
+       
+        <!-- <div class="col-md-12 col-xs-12">
+            <div class="empty-box">
+                <a href="#" class="btn btn-primary">Submit Weekly reports</a>
+                <a href="#" class="btn btn-primary">Submitted Weekly reports</a>
+            </div>
+        </div> -->
+    </div>
+</div>
+{% endblock %}
