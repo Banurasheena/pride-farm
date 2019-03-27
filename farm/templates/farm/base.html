@@ -20,6 +20,13 @@
 </head>
 
 <body>
+    <header>
+        <h1>PRIDE</h1>
+    </header>
+
+
+
+
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -29,6 +36,13 @@
                             {% url 'home' as hom %} {% url 'students' as acc %} {% url 'programs' as prog %}
                             {% url 'login' as log %} {% url 'student_detail' pk=user.student.pk as sd %}
                             <a href="{% url 'home' %}" {% if request.path == hom %} class="active" {% endif %}>Home</a>
+                            <a href="{% url 'officers' %}" {% if request.path == hom %} class="active"
+                                {% endif %}>Officers</a>
+                            <a href="#" {% if request.path == hom %} class="active" {% endif %}>Farmers</a>
+                            <a href="#" {% if request.path == hom %} class="active" {% endif %}>Reports</a>
+                            <a href="#" {% if request.path == hom %} class="active" {% endif %}>Seasons</a>
+
+
 
 
 

@@ -1,0 +1,51 @@
+{% extends 'farm/base.html' %}
+
+
+{% block content %}
+
+<form method="post" class="login card-box">
+
+
+
+    <h6>REGISTER</h6><br />
+    <div class="form-group">
+        <label>
+            <!--USERNAME-->
+            <input type="text" placeholder="Username" class="form-control" name="username" id="username">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <!--login id -->
+            <input type="text" placeholder="login id " class="form-control" name="login id " id="login id">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <!-- password-->
+            <input type="text" placeholder="Password" class="form-control" name="password" id="password">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <!--District-->
+            <input type="text" placeholder="District" class="form-control" name="district" id="district">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <!--Sub-county-->
+            <input type="text" placeholder="Sub-county" class="form-control" name="Sub-county" id="Sub-county">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <!--Phone-->
+            <input type="text" placeholder="Phone" class="form-control" name="phone" id="phone">
+        </label>
+    </div>
+    <input style="width: 100%" type="submit" class="btn btn-primary" value="SUBMIT" />
+    <hr />
+
+</form>
+{% endblock %}
